@@ -28,7 +28,7 @@ class Model extends \Marwelln\Recaptcha\Model {
 			}
 		}
 
-		return (bool) $json->success;
+		return (bool) isset($json->success) ? true : false;
 	}
 }
 
